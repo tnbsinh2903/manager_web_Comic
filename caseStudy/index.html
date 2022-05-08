@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truyện Tranh Của Sinh</title>
+    <link rel="shortcut icon"
+        href="https://haycafe.vn/wp-content/uploads/2021/11/hinh-anh-hoat-hinh-de-thuong-cute-dep-nhat.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="jscripyt.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="hearder">
+            <div class="top top-img">
+                <img class="top top-img" src="https://static.cocomic.net/images/logo.png" alt="Truyện Tranh 24h">
+            </div>
+            <!-- <div>
+                <div class=" top-menu">Truyện Hay</div>
+            </div> -->
+            <div class="top top-search">
+                <input placeholder="Nhập tên truyện cần tìm..." type="search" id="searchh" oninput="searcher(event)"
+                    autocomplete="off">
+                <!-- <button class="icon-search" type="submit" style="cursor: pointer;">
+                    <i class="fa-brands fa-searchengin"></i></button> -->
+            </div>
+            <div class="top top-dkdn">
+                <h3 class="name">Admin Sinh cute</h3>
+                <button id="show" class="top top-dk">Add</button>
+            </div>
+        </div>
+        <div id="body">
+            <ul id="menu-headr">
+                <li>
+                    <a href="http://127.0.0.1:5501/caseStudy/index.html" target="_self" class="menu menu-tc">Trang
+                        Chủ</a>
+                </li>
+                <li>
+                    <a href="" class="menu menu-tl">Thể Loại</a>
+                    <ul class="menu1">
+                        <li><a href="#" onclick="phieuluu()">Phiêu Lưu</a></li>
+                        <li><a href="#" onclick="thieunhi()">Thiếu Nhi</a></li>
+                        <li><a href="#" onclick="trinhtham()">Trinh Thám</a></li>
+                        <li><a href="#" onclick="sport()">Sport</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="menu menu-th">Đọc Nhiều</a>
+                </li>
+                <li>
+                    <a href="" class="menu menu-bxh">BXH</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/lxixsxa.jp" target="_blank" class="menu menu-bxh">Fanpage</a>
+                </li>
+            </ul>
+        </div>
+        <div class="com_header">
+            <div class="com_contents">
+                <div class="content-com">
+                    <h2> <span class="ico"><i class="fa-solid fa-fire-flame-curved"></i></span>Truyện Hot</h2>
+                </div>
+                <div class="show-manga"></div>
+            </div>
+        </div>
+        <div id="addComic" class="comic" style="display:none;">
+            <div class="myComic">
+                <div class="comic-header">
+                    <h1>Thêm Truyện</h1>
+                    <span class="close">X</span>
+                </div>
+                <div id="box_form" class="box-form">
+                    <div class="form">
+                        <label for="namecomi">Tên Truyện</label>
+                        <input type="text" class="form-ip" id="ipname">
+                    </div>
+                    <div class="form">
+                        <label for="picture">Ảnh Truyện</label>
+                        <input type="url" class="form-ip" id="ipphoto">
+                    </div>
+                    <div class="form">
+                        <label for="chap">Tập</label>
+                        <input type="number" class="form-ip" id="ipchap">
+                    </div>
+                    <div class="form">
+                        <label for="category">Thể Loại</label>
+                        <input type="text" class="form-ip" id="ipcategory">
+                    </div>
+                    <div class="btadd">
+                        <button id="add" onclick="addComic()" class="iconadd"><i
+                                class="fa-solid fa-plus"></i></i></button>
+                        <button id="update" style="display:none" onclick="updataComic()" class="iconadd">
+                            <i class="fa-regular fa-download"></i></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <button id="show">add</button> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- <ul class="item-photo">
+    <li>
+        <div>
+            <a href="">
+                <span class="photo1">Chap 1039</span>
+                <img class="item-thumbai"
+                    src="https://cachtrongrausach.vn/hinh-nen-one-piece-cho-dien-thoai/imager_10659.jpg"
+                    alt="">
+            </a>
+        </div>
+        <div>
+            <h3 class="item-title">One Piece</h3>
+        </div>
+    </li>
+</ul> -->
